@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
-import path form "path"
+import path from "path"
 
 import authRoute from "./routes/auth.js";
 import postsRoute from "./routes/posts.js";
@@ -18,7 +18,7 @@ app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors());
 
-// production 
+// production
 if (process.env.NODE_ENV){
     app.use(express.static(path.join(__dirname, '.clinet/build')))
     app.get('*', (req, res) => {
