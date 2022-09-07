@@ -9,7 +9,7 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && run build --prefix client"
-  },
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rofson17/debater.git"
